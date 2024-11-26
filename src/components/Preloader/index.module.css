@@ -1,0 +1,19 @@
+.main {
+  padding-top: 10vh;
+}
+
+.spinerContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 600;
+}
