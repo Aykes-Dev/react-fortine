@@ -1,0 +1,20 @@
+.container {
+  background-color: #1f7a8c;
+  margin: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  justify-content: center;
+  display: flex;
+}
+
+.textBox {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}

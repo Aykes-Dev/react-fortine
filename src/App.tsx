@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { QueryClient, QueryClientProvider } from "react-query";
+import { Footer } from "./components/Layout/Footer";
+import { Header } from "./components/Layout/Header";
+import { ReactQueryDevtools } from "react-query/devtools";
+import { Main } from "./components/Main";
+import { Container } from "react-bootstrap";
+
+import { ContextProvider } from "./store/context";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      {/* The rest of your application */}
+      <ReactQueryDevtools initialIsOpen={false} />
+      <ContextProvider>
+        <Header />
+        <main>
+          <Container fluid="xl">
+            <Main />
+          </Container>
+        </main>
+        <Footer />
+      </ContextProvider> 
+    </QueryClientProvider>
   );
 }
 

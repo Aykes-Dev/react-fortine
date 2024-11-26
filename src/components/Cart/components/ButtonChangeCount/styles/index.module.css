@@ -1,0 +1,25 @@
+.btn {
+  position: relative;
+  height: 20px; 
+  width: 20px; 
+  border-radius: 20px;
+  border: 0.3px solid #022b3a;
+}
+
+.textIncrement {
+  position: absolute;
+  top: 0;
+  left: 22%;
+  font-size: 20px;
+  font-weight: 800;
+  transform: translate(-10%, -24%);
+}
+
+.textDincrement {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  font-size: 20px;
+  font-weight: 800;
+  transform: translate(-22%, -24%);
+}
