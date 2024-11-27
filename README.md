@@ -16,9 +16,9 @@ Run in development mode
 ```
 npm run start
 ```
-ИЛИ
+Or
 ```
 yarn run start
 ```
 
-Before launching, create a .uti file. Example in .env.example\
+Before launching, create a .uti file. Example in .env.example.
